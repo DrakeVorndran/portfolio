@@ -1,0 +1,51 @@
+.page-container {
+  position: absolute;
+  left: -150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100vw;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.page-container .page {
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 100px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  width: 100vw;
+  height: calc(100vh - 100px);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.page-container .page .inner-page {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  height: 100%;
+  width: 100%;
+}
+
+.page-container .page:nth-child(1) {
+  background-color: #302155;
+}
+
+.page-container .page:nth-child(2) {
+  background-color: #443079;
+}
+
+.page-container .page:nth-child(3) {
+  background-color: #593e9e;
+}
+
+.page-container .page:nth-child(4) {
+  background-color: #7054bb;
+}
+/*# sourceMappingURL=App.css.map */

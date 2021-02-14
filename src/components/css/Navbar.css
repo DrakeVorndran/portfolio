@@ -1,5 +1,7 @@
 nav {
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
   background-color: var(--color-nav);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +50,10 @@ nav ul li {
           justify-content: center;
 }
 
-nav ul li button {
+nav ul li a {
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
   -webkit-transition: 100ms;
   transition: 100ms;
   font-family: "Raleway", sans-serif;
@@ -70,7 +75,7 @@ nav ul li:hover {
           box-shadow: 0px 5px 5px  #00000022;
 }
 
-nav ul li:hover button {
+nav ul li:hover a {
   color: var(--color-nav);
 }
 
@@ -80,11 +85,11 @@ nav img {
 }
 
 nav .pointer {
-  position: absolute;
   -webkit-transition: 500ms;
   transition: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(1, 0.5, 0.5, 1);
-          transition-timing-function: cubic-bezier(1, 0.5, 0.5, 1);
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: absolute;
   z-index: 0;
   bottom: 0;
   height: 20px;
